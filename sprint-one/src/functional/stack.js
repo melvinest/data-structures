@@ -7,13 +7,14 @@ var Stack = function() {
 
   // Implement the methods below
   someInstance.push = function(value) {
-    storageSize++;
     storage[storageSize] = value;
+    storageSize++;
   };
 
   someInstance.pop = function() {
-    returnValue = storage[storageSize]
-    delete storage[storageSize];
+    var index = storageSize - 1;
+    returnValue = storage[index];
+    delete storage[index];
     storageSize = Math.max(storageSize -= 1, 0);
     return returnValue;
   };
