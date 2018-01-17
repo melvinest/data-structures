@@ -7,13 +7,9 @@ var Queue = function() {
 
   // Implement the methods below
 
-  someInstance.enqueue = function(value, index) {
-    
-    if(!index) {
-      index = storageSize;
-    }
+  someInstance.enqueue = function(value) {
 
-    storage[index] = value;
+    storage[storageSize] = value;
     storageSize++;
   };
 
