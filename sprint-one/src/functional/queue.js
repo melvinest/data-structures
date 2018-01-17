@@ -24,6 +24,7 @@ var Queue = function() {
     delete storage[storageSize + 1];
     return dequeuedValue;
   };
+  
 
   someInstance.size = function() {
     return storageSize;
