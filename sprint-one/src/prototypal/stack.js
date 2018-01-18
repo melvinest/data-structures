@@ -13,7 +13,6 @@ var Stack = function() {
   return someInstance;
 };
 
-
 var stackMethods = {
 
   // Implement the methods below

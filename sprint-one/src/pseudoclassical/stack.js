@@ -8,7 +8,6 @@ var Stack = function() {
 
 };
 
-
 stackMethods = {
 
   // Implement the methods below
@@ -31,7 +30,7 @@ stackMethods = {
 };
 
 for(var key in stackMethods) {
-	Stack.prototype[key] = stackMethods[key];
+  Stack.prototype[key] = stackMethods[key];
 };
 
 

@@ -6,7 +6,6 @@ var Queue = function() {
 
 };
 
-
 queueMethods = {
   enqueue: function(value) {
     
@@ -33,5 +32,5 @@ queueMethods = {
 };
 
 for(var key in queueMethods) {
-	Queue.prototype[key] = queueMethods[key];
+  Queue.prototype[key] = queueMethods[key];
 };
