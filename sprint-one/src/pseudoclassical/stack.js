@@ -18,7 +18,7 @@ stackMethods = {
 
   pop: function() {
     var index = this.storageSize - 1;
-    returnValue = this.storage[index];
+    var returnValue = this.storage[index];
     delete this.storage[index];
     this.storageSize = Math.max(this.storageSize -= 1, 0);
     return returnValue;

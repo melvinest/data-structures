@@ -13,7 +13,7 @@ var Stack = function() {
 
   someInstance.pop = function() {
     var index = storageSize - 1;
-    returnValue = storage[index];
+    var returnValue = storage[index];
     delete storage[index];
     storageSize = Math.max(storageSize -= 1, 0);
     return returnValue;
